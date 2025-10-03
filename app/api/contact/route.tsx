@@ -15,7 +15,7 @@ export async function POST(request: Request) {
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: "Mimelia's Cleaning <onboarding@resend.dev>",
+      from: "Mimelia's Cleaning <contact@mimeliaa.com>",
       to: ["Mimeliags@gmail.com"], // Changed back to production email
       subject: `New Quote Request from ${name}`,
       html: `

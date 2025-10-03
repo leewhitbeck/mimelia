@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Suspense } from "react"
 import { LanguageProvider } from "@/hooks/use-language"
+import { Toaster } from "@/components/ui/toaster"
 import "./globals.css"
 
 const inter = Inter({
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body className={`font-sans ${inter.variable}`}>
         <LanguageProvider>
           <Suspense fallback={null}>{children}</Suspense>
+          <Toaster />
         </LanguageProvider>
       </body>
     </html>
