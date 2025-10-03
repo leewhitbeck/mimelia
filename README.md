@@ -1,2 +1,2 @@
 # mimelia
-static site for mimelia
+static site for mimeliaa
